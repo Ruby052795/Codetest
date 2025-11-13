@@ -31,8 +31,11 @@ behave features/public_api/get_candlestick.feature
 behave -t @positive_case -vs
 
 6, Test report check
-# should setup Allure in your local PC
+# Allure should be properly configured on your local machine
 behave --format allure_behave.formatter:AllureFormatter -o allure-results -v --no-capture
+
+# Allure report should be generated and opened automatically . [after_all setup in environment.py]
+# If doesn't work, use below commend to generate allure report manually
 allure generate allure-results -o allure-report --clean
 allure open allure-report
 
