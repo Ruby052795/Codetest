@@ -1,0 +1,55 @@
+# get_candlestick_data.yaml
+
+P-1:
+  description: Test the API with valid required and valid non-default optional parameters
+  instrument_name: BTCUSD-PERP
+  timeframe: H1
+  count: 10
+  start_ts: 1757709600123
+  end_ts: 1757719600000
+  expected_count: 10
+  expected_interval: H1
+
+P-2:
+  description: Test the API with default optional parameters.
+  instrument_name: BTCUSD-PERP
+  expected_count: 25
+  expected_interval: M1
+
+N-1:
+  description: Invalid instrument name
+  instrument_name: INVALID_PAIR
+  timeframe: H1
+  count: 10
+
+N-2:
+  description: Invalid timeframe
+  instrument_name: BTCUSD-PERP
+  timeframe: 20m
+  count: 10
+
+N-3:
+  description: Invalid count value
+  instrument_name: BTCUSD-PERP
+  timeframe: M1
+  count: a
+
+N-4:
+  description: Invalid Timestamp Format - start_ts
+  instrument_name: BTCUSD-PERP
+  timeframe: M1
+  count: 10
+  start_ts: '2025-11-14'
+
+N-5:
+  description: Invalid Timestamp Format - end_ts
+  instrument_name: BTCUSD-PERP
+  timeframe: D1
+  count: 10
+  end_ts: '2025-11-14'
+
+N-6:
+  description: Missing Required Parameter
+  timeframe: 5M
+  count: 10
+
