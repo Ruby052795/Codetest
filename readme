@@ -1,0 +1,51 @@
+This a home assignment - task 1.
+
+REST endpoint: public/get-candlestick
+The REST API root endpoint:
+https://exchange-docs.crypto.com/#rest-api-root-endpoint
+The document address of the specific endpoint:
+https://exchange-docs.crypto.com/#public-get-candlestick
+
+********************************************************************************
+Setup guides:
+
+1, Clone the repository
+git clone git@github.com:Ruby052795/Codetest.git
+
+2, Environment
+python 3.10
+pip install -r requirements.txt
+
+3, Test Case Location
+/features/public_api/get_candlestick.feature
+
+4, Test Data Location
+/features/test_data/get_candlestick_data.yaml
+
+5, Run test
+# run all feature file
+behave
+# run specific feature file
+behave features/public_api/get_candlestick.feature
+# run test cases by tags
+behave -t @positive_case -vs
+
+6, Test report check
+# should setup Allure in your local PC
+behave --format allure_behave.formatter:AllureFormatter -o allure-results -v --no-capture
+allure generate allure-results -o allure-report --clean
+allure open allure-report
+
+*********************************************************************************
+Short description about task 1:
+1, Include 8 scenarios (2 positive and 6 negative)
+    positive scenarios:
+        1, Provide both Valid required and valid optional parameters with non-default value.
+        2, Provide required parameters to check optional parameters with default value.
+    negative scenarios:
+        1, Provide invalid instrument_name
+        2, Provide invalid timeframe
+        3, Provide invalid count value
+        4, Provide invalid Timestamp Format - start_ts
+        5, Provide invalid Timestamp Format - end_ts
+        6, Send request with missing Required Parameter
