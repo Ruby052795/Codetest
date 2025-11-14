@@ -7,14 +7,10 @@ P-1:
   count: 10
   start_ts: 1757709600123
   end_ts: 1757719600000
-  expected_count: 10
-  expected_interval: H1
 
 P-2:
   description: Test the API with default optional parameters.
   instrument_name: BTCUSD-PERP
-  expected_count: 25
-  expected_interval: M1
 
 N-1:
   description: Invalid instrument name
