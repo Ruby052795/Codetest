@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aee6c75-3c95-4bba-9070-d3d6c889abc6" name="Changes" comment="adjust yaml file">
+    <list default="true" id="5aee6c75-3c95-4bba-9070-d3d6c889abc6" name="Changes" comment="adjust requirements file">
       <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/16f405a0cc8e2349.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/3c49e1be574e773d.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/4d047daeccd272da.json" afterDir="false" />
@@ -53,6 +53,8 @@
       <change afterPath="$PROJECT_DIR$/allure-results/d29d315f-ca6f-435d-9f39-abdc7fa77b7d-result.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/e9105795-9bf4-4ff2-8eda-c61a73c73a97-result.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/allure-results/fd0541ba-ffe7-471d-98b6-52aecb280985-result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme" beforeDir="false" afterPath="$PROJECT_DIR$/readme" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +186,8 @@
       <workItem from="1763050695226" duration="244000" />
       <workItem from="1763050951237" duration="2000000" />
       <workItem from="1763097242646" duration="70000" />
+      <workItem from="1763097382905" duration="138000" />
+      <workItem from="1763224898309" duration="629000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -233,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763097308794</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adjust requirements file">
+      <option name="closed" value="true" />
+      <created>1763097430490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763097430490</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +256,8 @@
     <MESSAGE value="Add allure part" />
     <MESSAGE value="adjust readme file" />
     <MESSAGE value="adjust yaml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust yaml file" />
+    <MESSAGE value="adjust requirements file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust requirements file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Codetest$public_api_client.coverage" NAME="public_api_client Coverage Results" MODIFIED="1763021225736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/api_client" />

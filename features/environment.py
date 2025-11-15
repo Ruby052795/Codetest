@@ -7,23 +7,13 @@ def before_scenario(context, scenario):
 
     scenario_name = scenario.name
 
+    patterns = ['P-1', 'P-2', 'N-1', 'N-2', 'N-3', 'N-4', 'N-5', 'N-6']
     data_key = None
-    if 'P-1' in scenario_name:
-        data_key = 'P-1'
-    elif 'P-2' in scenario_name:
-        data_key = 'P-2'
-    elif 'N-1' in scenario_name:
-        data_key = 'N-1'
-    elif 'N-2' in scenario_name:
-        data_key = 'N-2'
-    elif 'N-3' in scenario_name:
-        data_key = 'N-3'
-    elif 'N-4' in scenario_name:
-        data_key = 'N-4'
-    elif 'N-5' in scenario_name:
-        data_key = 'N-5'
-    elif 'N-6' in scenario_name:
-        data_key = 'N-6'
+    for p in patterns:
+        if p in scenario_name:
+            data_key = p
+            break
+
 
     data_path = os.path.join(os.path.dirname(__file__), 'test_data', 'get_candlestick_data.yaml')
 

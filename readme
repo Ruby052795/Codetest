@@ -1,10 +1,6 @@
 This a home assignment - task 1.
 
 REST endpoint: public/get-candlestick
-The REST API root endpoint:
-https://exchange-docs.crypto.com/#rest-api-root-endpoint
-The document address of the specific endpoint:
-https://exchange-docs.crypto.com/#public-get-candlestick
 
 ********************************************************************************
 Setup guides:
